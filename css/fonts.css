@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?e5auy7');
+  src:  url('../fonts/icons.eot?e5auy7#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?e5auy7') format('truetype'),
+    url('../fonts/icons.woff?e5auy7') format('woff'),
+    url('../fonts/icons.svg?e5auy7#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-envelope-o:before {
+  content: "\f003";
+}
+._icon-check:before {
+  content: "\f00c";
+}
+._icon-map-marker:before {
+  content: "\f041";
+}
+._icon-phone:before {
+  content: "\f095";
+}
+._icon-briefcase:before {
+  content: "\f0b1";
+}
+._icon-bars:before {
+  content: "\f0c9";
+}
+._icon-navicon:before {
+  content: "\f0c9";
+}
+._icon-reorder:before {
+  content: "\f0c9";
+}
+._icon-angle-left:before {
+  content: "\f104";
+}
+._icon-angle-right:before {
+  content: "\f105";
+}
+._icon-quote-right:before {
+  content: "\f10e";
+}
