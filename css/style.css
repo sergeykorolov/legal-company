@@ -1,109 +1,200 @@
-*{
+* {
 	box-sizing: border-box;
 }
-a{
+a {
 	text-decoration: none;
 	display: inline-block;
 }
-ul, li{
+ul,
+li {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.container{
+.container {
 	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
-body{
+body {
 	/*font-family: 'Roboto', sans-serif;*/
-	font-family: 'PT Serif', serif;
+	font-family: "PT Serif", serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 	color: #5e5e5e;
 }
-.header{
-	font-family: 'Roboto', sans-serif;
+.header {
+	font-family: "Roboto", sans-serif;
 }
-.header__top{
-	background-color: #303030
+.header__top {
+	background-color: #303030;
 }
-.header__btn{
+.header__btn {
 	float: right;
 	font-size: 16px;
 	line-height: 36px;
 	color: #1b1b1b;
 	background-color: #ffc222;
 	padding: 5px 20px 4px 50px;
-    position: relative;
+	position: relative;
 }
-.header__btn:before{
-    font-family: icons;
-    content: "\f0b1";
-    position: absolute;
-    left: 22px;
-    color: #1b1b1b;
+.header__btn:before {
+	font-family: icons;
+	content: "\f0b1";
+	position: absolute;
+	left: 22px;
+	color: #1b1b1b;
 }
 /*нужно задать когда у одного из потомков задано свойство float*/
-.header__contacts:after{
+.header__contacts:after {
 	content: "";
 	clear: both;
 	display: block;
 }
-.header__phone, 
-.header__email{
+.header__phone,
+.header__email {
 	line-height: 45px;
 	color: #cbcacb;
 	letter-spacing: 0.25px;
-    position: relative;
+	position: relative;
 }
-.header__phone{
+.header__phone {
 	padding-left: 20px;
 	padding-right: 30px;
 }
-.header__phone:before{
-    font-family: icons;
-    content: "\f095";
-    position: absolute;
-    left: 0;
-    color: #ffc222;
+.header__phone:before {
+	font-family: icons;
+	content: "\f095";
+	position: absolute;
+	left: 0;
+	color: #ffc222;
 }
-.header__email{
+.header__email {
 	padding-left: 24px;
 }
-.header__email:before{
-    font-family: icons;
-    content: "\f003";
-    position: absolute;
-    left: 0;
-    color: #ffc222;
+.header__email:before {
+	font-family: icons;
+	content: "\f003";
+	position: absolute;
+	left: 0;
+	color: #ffc222;
 }
-.header__content{
-    padding: 34px 0 23px 0;
+.header__content {
+	padding: 34px 0 23px 0;
 }
-.header__content-inner{
-    display: flex;
-    justify-content: space-between;
+.header__content-inner {
+	display: flex;
+	justify-content: space-between;
 }
-.menu li{
-    display: inline-block;
+.menu li {
+	display: inline-block;
 }
-.menu a{
-    font-size: 16px;
-    line-height: 36px;
-    color: #323232;
-    border: 1px solid transparent;
-    padding: 0 16px;
-    transition: all .3s;
+.menu a {
+	font-size: 16px;
+	line-height: 36px;
+	color: #323232;
+	border: 1px solid transparent;
+	padding: 0 16px;
+	transition: all 0.3s;
 }
-.menu a:hover{
-    border-color: #ffc222;
+.menu a:hover {
+	border-color: #ffc222;
 }
-.menu li + li{
-    padding-left: 10px;
+.menu li + li {
+	padding-left: 10px;
+}
+#modal {
+	display: none;
+}
+.slider {
+	background-image: url("../img/slider-back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 500px;
+}
+.slider__item-content {
+	text-align: center;
+	padding-top: 110px;
+	max-width: 665px;
+	margin: 0 auto;
 }
 
-#modal {
-    display: none;
+.slider__title {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 36px;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	margin-bottom: 22px;
+	font-family: "Roboto", sans-serif;
+}
+
+.slider__text {
+	font-size: 18px;
+	line-height: 24px;
+	color: #d3d2d2;
+	margin-bottom: 50px;
+}
+
+.default-btn {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	padding: 8px 30px 8px 24px;
+	border: 1px solid #ffc222;
+	border-right-width: 20px;
+	position: relative;
+	outline: none;
+}
+.default-btn:after {
+	content: "\f105";
+	font-family: icons;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -12px;
+}
+.slider__inner {
+	position: relative;
+}
+.slick-btn {
+	position: absolute;
+	top: 70%;
+	z-index: 3;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	outline: none;
+	background-color: #ffc222;
+}
+.slick-btn.slick-disabled {
+	cursor: default;
+	background-color: transparent;
+}
+.slick-btn:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: icons;
+	color: #fff;
+}
+.slick-prev:before {
+	content: "\f104";
+}
+.slick-prev {
+	left: 0;
+}
+.slick-next:before {
+	content: "\f105";
+}
+.slick-next {
+	right: 0;
 }
