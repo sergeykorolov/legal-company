@@ -198,21 +198,21 @@ body {
 .slick-next {
 	right: 0;
 }
-.about {
+.services {
 	padding: 50px 0 30px;
 }
-.about__top {
+.services__top {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 60px;
 }
-.about__title-box {
+.services__title-box {
 	max-width: 520px;
 	padding-left: 140px;
 	position: relative;
 }
-.about__title-box::before {
+.services__title-box::before {
 	content: "";
 	position: absolute;
 	width: 105px;
@@ -221,7 +221,7 @@ body {
 	left: 0;
 	top: 11px;
 }
-.about__title {
+.services__title {
 	font-family: "Roboto", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
@@ -229,10 +229,10 @@ body {
 	color: #212020;
 	margin-bottom: 10px;
 }
-.about__text {
+.services__text {
 	letter-spacing: 0.1px;
 }
-.about__btn {
+.services__btn {
 	font-family: "Roboto", sans-serif;
 	line-height: 24px;
 	border: 3px solid #e6e6e6;
@@ -240,11 +240,11 @@ body {
 	color: #373636;
 	padding: 5px 38px;
 }
-.about__items {
+.services__items {
 	display: flex;
 	justify-content: space-between;
 }
-.about__item {
+.services__item {
 	max-width: 360px;
 	text-align: center;
 	background-color: #f9f9f9;
@@ -253,7 +253,7 @@ body {
 	min-height: 375px;
 	box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
-.about__item-title {
+.services__item-title {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
@@ -261,23 +261,23 @@ body {
 	color: #212020;
 	padding: 20px 0 25px;
 }
-.about__item-text {
+.services__item-text {
 	letter-spacing: 0.1px;
 	padding: 0 35px 30px;
 }
-.about__item-btn {
+.services__item-btn {
 	position: absolute;
 	bottom: 40px;
 	left: 0;
 	right: 0;
 }
-.about__item-btn .default-btn {
+.services__item-btn .default-btn {
 	color: #373636;
 }
-.about__item-btn .default-btn::after {
+.services__item-btn .default-btn::after {
 	color: #fff;
 }
-.about__item-link {
+.services__item-link {
 	font-family: "Roboto", sans-serif;
 	color: #050505;
 	border-bottom: 1px solid #050505;
